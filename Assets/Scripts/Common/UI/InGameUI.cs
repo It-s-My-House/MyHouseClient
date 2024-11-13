@@ -64,6 +64,7 @@ public class InGameUI : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         _status = _player.GetComponent<IStatus>();
         InitUI();
     }
